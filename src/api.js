@@ -9,7 +9,7 @@ export const fetchTenders = async (filters = {}) => {
     const response = await axios.get(API_URL, { params: filters });
     return response.data;
   } catch (error) {
-    console.error("❌ Error fetching tenders:", error);
+    console.error("Error fetching tenders:", error);
     return [];
   }
 };
