@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const API_URL =
-  import.meta.env.VITE_API_URL || "http://localhost:8000/api/tenders";
+const API_URL = "http://localhost:8000/api/tenders";
 
 // ✅ Fetch tenders with filters
 export const fetchTenders = async (filters = {}) => {
